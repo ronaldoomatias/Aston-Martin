@@ -1,0 +1,26 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.destaque{
+    font-weight: bold;
+    font-size: 40px;
+}
+.banner{
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+.banner img{
+    
+}
