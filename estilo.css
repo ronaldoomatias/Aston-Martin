@@ -1,81 +1,224 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    width: 1296px;
-    height: 170px;
-    margin: 40 auto;
-    padding: 20px;
-    background-color: black;
-    color: #fff;
-    line-height: 1.6;
-}
-a {
-    text-decoration: none;
-    color: #fff;
-}
-.navbar {
+  }
+  
+  body {
+    background-color: #020202;
+    font-family: 'Lucida Sans', sans-serif;
+  }
+  
+  .container-topo {
+    width: 100%;
+    max-width: 1278px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-}
-.nav-menu {
+    margin: 0 auto;
+    padding: 35px;
+  }
+  
+  .logo img {
+    width: 83px;
+    height: 22.21px;
+  }
+  
+  .menu-navegacao ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .menu-navegacao ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .botao-compra {
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+  .botao-compra:hover {
+    background-color: #fff;
+    color: #020202;
+  }
+  
+  .sessao-principal .bloco {
+    width: 100%;
+    max-width: 1296px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .fundo-vermelho {
+    background: linear-gradient(89.95deg, #91282F 0.44%, #330002 98.92%);
+  }
+  
+  .conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+  }
+  
+  h2, p {
+    color: #fff;
+  }
+  .destaque{
+    font-weight: bold;
+    margin: 10px;
+    font-size: 60px;
+  }
+  .italico{
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .botao-destaque,
+  .botao-informacao {
+    color: #fff;
+    background-color: black;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    width: fit-content;
+    font-size: 16px;
+  }
+  
+  .botao-destaque:hover,
+  .botao-informacao:hover {
+    background-color: #fff;
+    color: #020202;
+  }
+  
+  .imagem-destaque img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .rodape {
+    background-color: #fff;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .conteudo-rodape {
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .logo-rodape {
+    margin: 20px auto;
+    width: 83px;
+    height: 22.21px;
+  }
+  
+  .conteudo-rodape p {
+    font-size: 13px;
+    margin: 20px 0;
+    color: #020202;
+  }
+  
+  .links-rodape ul {
     list-style: none;
     display: flex;
-    gap: 16px;
-}
-.nav-menu a.btn {
-    background: #fff;
-    color: black;
-    padding: 8px 16px;
-    border: 4px;
-}
-.box1 {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 40 auto;
-}
-.box-1 h2 {
-    font-size: 32px;
-}
-.box-1 span {
-    font-size: ;
-}
-
-.car-img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 16px;
-    padding: 20px;
-}
-.btn {
-    display: inline-block;
-    margin-top: 16px;
-    background: #0000;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .links-rodape a {
+    color: #020202;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  /* RESPONSIVIDADE */
+  @media (max-width: 768px) {
+    .container-topo {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
     }
-.box2, .box3{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.box3{
-    background: linear-gradient(to rigth, #5e0a0a, #aa2323);
-    color: #fff;
-    margin: 40 auto;
-}
-.box-3 text h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
-}
+  
+    .menu-navegacao ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .menu-navegacao ul li a {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  
+    .sessao-principal .bloco {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .conteudo-texto {
+      max-width: 100%;
+      align-items: center;
+    }
+  
+    .conteudo-texto h2,
+    .conteudo-texto p {
+      text-align: center;
+    }
+  
+    .imagem-destaque {
+      text-align: center;
+    }
+  
+    .imagem-destaque img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+  
+    .logo-rodape img {
+      max-width: 100px;
+      height: auto;
+    }
+  
+    .botao-destaque,
+    .botao-informacao {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+  
+    .links-rodape ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .conteudo-rodape p {
+      padding: 0 10px;
+    }
+  }
