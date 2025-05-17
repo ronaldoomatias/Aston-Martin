@@ -6,7 +6,7 @@
   
   body {
     background-color: #020202;
-    font-family: 'Lucida Sans', sans-serif;
+    font-family: "inter";
   }
   
   .container-topo {
@@ -57,7 +57,8 @@
   
   .sessao-principal .bloco {
     width: 100%;
-    max-width: 1296px;
+    max-width: 1320px;
+    height: 384px;
     margin: 40px auto;
     display: flex;
     justify-content: space-between;
@@ -70,7 +71,22 @@
     background: linear-gradient(89.95deg, #91282F 0.44%, #330002 98.92%);
   }
   
-  .conteudo-texto {
+  .conteudo-texto1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+    font-size: 300;
+  }
+    
+  .conteudo-texto2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+  }
+  
+  .conteudo-texto3 {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -86,7 +102,7 @@
     font-size: 60px;
   }
   .italico{
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
   }
   
@@ -108,7 +124,19 @@
     color: #020202;
   }
   
-  .imagem-destaque img {
+  .imagem-destaque1 {
+    max-width: 850px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagem-destaque2 img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .imagem-destaque3 img {
     max-width: 500px;
     width: 100%;
     height: auto;
